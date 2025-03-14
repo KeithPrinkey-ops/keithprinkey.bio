@@ -3,6 +3,7 @@
 use App\Http\Controllers\ContactController;
 use App\Livewire\Forms\ContactForm;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ResumeController;
 
 
 
@@ -23,3 +24,5 @@ Route::view('/tech-stack', 'tech-stack.tech-stack')->name('tech-stack');
 Route::view('/resume', 'resume.resume')->name('resume');
 Route::get('/contact', ContactForm::class)->name('contact-form');
 Route::get('/contact-json', [ContactController::class, 'index'])->name('contact.json');
+Route::get('/resume', [ResumeController::class, 'index'])->name('resume.index');
+Route::get('/resume/download', [ResumeController::class, 'download'])->name('resume.download');
