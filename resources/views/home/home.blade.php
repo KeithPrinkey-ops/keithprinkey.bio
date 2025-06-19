@@ -42,7 +42,7 @@
                         <h1 class="font-semibold pb-2 md:text-5xl xl:text-8xl xl:leading-none xl:tracking-tightest tracking-tight text-3xl inline-block bg-clip-text bg-gradient-to-r text-transparent from-gray-300 via-white to-gray-500">Build Beautiful Websites</h1>
                         <p class="text-white font-light lg:text-xl tracking-tight lg:leading-7 opacity-90 max-w-xl sm:mx-auto lg:mx-0 mt-4 text-lg">I'm Keith Prinkey, a web developer specializing in Laravel, PHP, and TailwindCSS. I craft intuitive, responsive, and powerful dig</p>
                         <div class="items-center flex gap-3 flex-col mt-8 mb-8 sm:flex-row">
-                            <a href="/contact" class="items-center text-base font-medium justify-center focus:outline-none text-black inline-flex bg-white border-2 border-white duration-200 focus-visible:outline-white focus-visible:ring-white hover:bg-transparent hover:border-white lg:w-auto px-5 py-2.5 rounded-full text-center hover:text-white w-full">Get a consult for your website</a>
+                            <a href="/contact" class="tails-selected-element items-center text-base font-medium justify-center focus:outline-none text-black inline-flex bg-white border-2 border-white duration-200 focus-visible:outline-white focus-visible:ring-white hover:bg-transparent hover:border-white lg:w-auto px-5 py-2.5 rounded-full text-center hover:text-white w-full">Get a consult for your website</a>
                         </div>
                     </div>
                 </div>
