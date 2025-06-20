@@ -134,7 +134,7 @@
                     </svg> </a> </div>
         </div>
         <div class="flex flex-col justify-between text-center md:flex-row">
-            <p class="order-last text-sm leading-tight text-zinc-500 md:order-first"> Crafted with <a href="https://laravel.com">Laravel</a> and<a href="https://tailwindcss.com" class="">Tailwind</a> and and Tailwind. Built with ❤️ 😍 by Keith Prinkey. </p>
+            <p class="order-last text-sm leading-tight text-zinc-500 md:order-first"> Crafted with <a href="https://laravel.com">Laravel</a> and <a href="https://tailwindcss.com" class="">Tailwind.</a> Built with ❤️ 😍 by Keith Prinkey. </p>
             <ul class="flex flex-row justify-center pb-3 -ml-4 -mr-4 text-sm">
                 <li class=""> <a href="/contact" class="px-4 text-zinc-500 hover:text-white">Contact</a> </li>
                 <li class=""> <a href="/about" class="px-4 text-zinc-500 hover:text-white">About me</a> </li>
