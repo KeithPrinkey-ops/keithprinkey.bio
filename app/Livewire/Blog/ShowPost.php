@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Blog;
 
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Model;
 use Livewire\Component;
 use App\Models\Post;
@@ -10,6 +11,13 @@ class ShowPost extends Component
     public Post $post;
     public function mount(Post $post)
     {
+        $this->categories = Category::all();
+        // Convert the category color to a hex code
+        $this->categories->transform(function (Category $category) {
+            $category->color_class = $category->color_class ? $category->color_class : 'red'; // Default to black if no color is set
+            return $category;
+        });
+
         // This will show individual blog posts
         $this->post = $post;
         if (!$this->post) {
@@ -30,3 +38,4 @@ class ShowPost extends Component
         ])->layout('layouts.guest');
     }
 }
+

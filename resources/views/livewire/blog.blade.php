@@ -4,32 +4,23 @@
                     {{-- Header --}}
                     <div class="flex justify-between w-full pb-5">
                         <div class="flex flex-col items-start sm:flex-row sm:items-center">
-                            <div class="px-3 py-2 text-sm font-medium text-white uppercase bg-zinc-800">Trending Now</div>
-                            <a href="#" class="mt-3 text-white transition duration-300 ease-out opacity-40 sm:ml-4 sm:mt-0 hover:opacity-80">Top Resources for Web Developers</a>
+                            <div class="px-3 py-2 text-sm font-medium text-white uppercase bg-zinc-800">Auto Sorted By Views</div>
+                            <h1 class="ml-3 text-3xl font-bold text-white sm:ml-5">Trending Blog Posts</h1>
                         </div>
-                        <div class="flex items-center">
-                            <a href="#" class="text-white transition duration-300 ease-out opacity-40 hover:opacity-80">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                            </a>
-                            <a href="#" class="text-white transition duration-300 ease-out opacity-40 hover:opacity-80">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                            </a>
-                        </div>
+
                     </div>
 
                     {{-- Blog post grid: 4 per row on lg, 3 per row on md --}}
                     <div class="grid grid-cols-12 gap-1">
                         @foreach($trending as $post)
                             <a href="{{ route('blog.show', $post) }}"
-                               class="relative flex flex-col items-start justify-end col-span-12 md:col-span-4 lg:col-span-3 px-5 pb-5 overflow-hidden bg-zinc-800 cursor-pointer h-96 group">
+                               class="rounded-xl relative flex flex-col items-start justify-end col-span-12 md:col-span-4 lg:col-span-3 px-5 pb-5 overflow-hidden bg-zinc-800 cursor-pointer h-96 group">
                                 <img src="{{ asset($post->hero_image_path) }}"
-                                     class="rounded-xl absolute inset-0 w-full h-full object-cover object-center transition duration-300 ease-out transform scale-100 group-hover:scale-105" />
+                                     class="absolute inset-0 w-full h-full object-cover object-center transition duration-300 ease-out transform scale-100 group-hover:scale-105" />
                                 <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-transparent to-zinc-900 opacity-90"></span>
-                                <span class="relative z-10 inline-block px-2 py-0.5 mb-3 text-xs font-medium uppercase
-                                    bg-{{ $post->category->slug === 'gaming' ? 'purple' : ($post->category->slug === 'coding' ? 'pink' : 'green') }}-500
-                                    text-white">
-                                    {{ $post->category->name }}
-                                </span>
+                                <span class="rounded-xl relative z-10 inline-block px-2 py-0.5 mb-3 text-xs font-medium uppercase bg-{{ $post->category->color_class }}-500 text-white">
+        {!! $post->category->name !!}
+    </span>
                                 <span class="relative z-10 mb-3 text-xl font-bold leading-tight text-white">
                                     {{ $post->title }}
                                 </span>
@@ -114,6 +105,23 @@
                                 </div>
                             </aside>
                         @endforeach
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <x-button
+                            wire:click="previousPage"
+                            :disabled="$trending->currentPage() <= 1"
+                            class="text-white opacity-40 hover:opacity-80 disabled:opacity-20 transition"
+                        >
+                            ‹
+                        </x-button>
+
+                        <x-button
+                            wire:click="nextPage"
+                            :disabled="$trending->currentPage() >= $trending->lastPage()"
+                            class="text-white opacity-40 hover:opacity-80 disabled:opacity-20 transition"
+                        >
+                            ›
+                        </x-button>
                     </div>
                 </div>
             </section>

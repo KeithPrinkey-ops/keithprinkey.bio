@@ -9,9 +9,12 @@ use Livewire\Form;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use App\Models\Category;
+use App\Livewire\MarkdownX;
 
 class BlogPostForm extends Component
 {
+    use InteractsWithBanner;
+
     protected $listeners = ['bodyUpdated' => 'updateBody'];
 
     public Post $post;
@@ -81,6 +84,12 @@ class BlogPostForm extends Component
         $this->reset(['hero_image', 'thumb_image']);
         // Optionally, you can redirect or show a success message
         session()->flash('message', 'Blog post created successfully!');
+    }
+
+    public function updateBody($value)
+    {
+        // This method is called when the body is updated from the MarkdownX component
+        $this->body = $value;
     }
 
 

@@ -5,3 +5,12 @@
 [x-cloak] {
     display: none;
 }
+
+.prose {
+    max-width: 75ch;
+    line-height: 1.75;
+}
+
+.dark .prose {
+    color: #e5e7eb; /* Tailwind zinc-200 or slate-200 */
+}

@@ -70,4 +70,5 @@ class Post extends Model
     {
         return 'slug';
     }
+
 }

@@ -10,6 +10,10 @@ class Category extends Model
 {
     use HasFactory;
 
+    // add the color_class attribute
+    protected $attributes = [
+        'color_class' => 'red', // Default color class
+    ];
     protected $fillable = [
         'name',
         'slug',
@@ -24,4 +28,5 @@ class Category extends Model
     {
         return $this->hasMany(Post::class);
     }
+
 }
