@@ -141,6 +141,7 @@
                 <li class=""> <a href="/about" class="px-4 text-zinc-500 hover:text-white">About me</a> </li>
                 <li class=""> <a href="/tech-stack" class="px-4 text-zinc-500 hover:text-white">Tech Stack</a> </li>
                 <li class=""> <a href="/terms" class="px-4 text-zinc-500 hover:text-white">Terms</a></li>
+                <li class=""> <a href="/privacy" class="px-4 text-zinc-500 hover:text-white">Privacy</a> </li>
             </ul>
         </div>
     </div>
