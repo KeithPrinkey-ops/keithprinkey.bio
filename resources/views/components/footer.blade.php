@@ -2,7 +2,9 @@
     <section class="py-10 bg-black">
         <div class="px-10 mx-auto max-w-7xl">
             <div class="flex flex-col items-center md:flex-row md:justify-between">
-
+                <a href="/" class="flex items-center justify-center w-auto h-auto mr-3 mb-7 rounded-xl">
+                    <img src="{{ asset('storage/logos/78b5f853-b9c3-4c6d-b41a-b716a000d1e3.jpeg') }}" alt="SSC Logo" class="w-16 h-16 object-cover rounded-xl" />
+                </a>
                 <div class="flex flex-row justify-center mb-4 -ml-4 -mr-4"> <a href="https://facebook.com/kprinkey" class="p-4 text-zinc-700 hover:text-zinc-400"> <svg class="fill-current" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"></path>
                         </svg> </a>  <a href="https://www.instagram.com/keithprinkey/" class="p-4 text-zinc-700 hover:text-zinc-400"> <svg class="fill-current" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -20,6 +22,7 @@
                     <li class=""> <a href="/about" class="px-4 text-zinc-500 hover:text-white">About me</a> </li>
                     <li class=""> <a href="/tech-stack" class="px-4 text-zinc-500 hover:text-white">Tech Stack</a> </li>
                     <li class=""> <a href="/terms" class="px-4 text-zinc-500 hover:text-white">Terms</a></li>
+                    <li class=""> <a href="/privacy" class="px-4 text-zinc-500 hover:text-white">Privacy</a> </li>
                 </ul>
             </div>
         </div>

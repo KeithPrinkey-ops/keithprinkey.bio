@@ -34,4 +34,15 @@ Route::get('/blog/{post:slug}', ShowPost::class) // <-- Use ShowPost here
 ->where('post', '^(?!blog$)[A-Za-z0-9\-_]+$')
     ->name('blog.show');
 
+// Add the terms and privacy policy routes for their markdown files
+Route::get('/terms', function () {
+    $markdown = File::get(resource_path('markdown/terms.md'));
+    $terms = Str::markdown($markdown);
+    return view('terms', compact('terms'));
+})->name('terms');
 
+Route::get('/privacy', function () {
+    $markdown = File::get(resource_path('markdown/policy.md'));
+    $policy = Str::markdown($markdown);
+    return view('policy', compact('policy'));
+})->name('privacy-policy');
