@@ -20,7 +20,7 @@ class ResumeController extends Controller
      */
     public function download()
     {
-        $filePath = public_path('KeithPrinkeyResume.pdf');
-        return Response::download($filePath, 'KeithPrinkeyResume.pdf');
+        $filePath = public_path('Keith_Prinkey_Resume.pdf');
+        return Response::download($filePath, 'Keith_Prinkey_Resume.pdf');
     }
 }
