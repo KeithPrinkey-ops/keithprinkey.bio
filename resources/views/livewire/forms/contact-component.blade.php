@@ -5,11 +5,11 @@
                 <p class="text-xs font-bold text-blue-500 uppercase">Contact Us</p>
                 <h2 class="mt-1 text-2xl font-bold text-left text-zinc-200 lg:text-3xl md:mt-2">Need to ask us a question?</h2>
                 <p class="max-w-screen-md mx-auto mt-4 text-left text-zinc-300 md:text-lg md:mt-6">
-                    Fill out the form below and we'll do some research on our end and get back to you within 24-48 hours. For specific technical issues, please visit our <a href="#_" class="font-medium text-blue-500 underline">developer help center</a>.
+                    Fill out the form below and we'll do some research on our end and get back to you within 24-48 hours.
                 </p>
             </div>
             <form id="contact-form" class="grid max-w-3xl gap-4 mx-auto sm:grid-cols-2" wire:submit.prevent="save">
-
+                @csrf
                 <div>
                     <x-label for="first_name" class="inline-block mb-2 text-sm font-medium text-zinc-300 sm:text-base">First name</x-label>
                     <x-input autofill required name="first_name" class="w-full px-3 py-2 text-zinc-800 transition duration-100 border rounded-md outline-none bg-zinc-50 focus:ring ring-blue-300" wire:model="first_name" />
