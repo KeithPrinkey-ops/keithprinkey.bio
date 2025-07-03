@@ -3,54 +3,62 @@
 namespace App\Notifications;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\Factory as Queue;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
+use App\Models\User;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
 
 class ContactFormNotification extends Notification
 {
-    use Queueable;
+    use Queueable, SerializesModels;
+    use InteractsWithQueue;
 
-    /**
-     * Create a new notification instance.
-     */
-    public function __construct()
+    public int $user_id;
+
+    public User $user;
+    public array $formData;
+
+    public function __construct(array $formData)
     {
-        //
+        $this->formData = $formData;
     }
 
-    /**
-     * Get the notification's delivery channels.
-     *
-     * @return array<int, string>
-     */
-    public function via(object $notifiable): array
+    public function via($notifiable): array
     {
-        return ['mail'];
+        return ['mail', 'database'];
     }
 
-    /**
-     * Get the mail representation of the notification.
-     */
-    public function toMail(object $notifiable): MailMessage
+    public function toMail($notifiable): MailMessage
     {
+        $this->user = User::find($this->formData['super-admin_id'] ?? $notifiable->id);
         return (new MailMessage)
-            ->line('A contact form was submitted.')
-            ->action('If you ever need help again, just click here >', url('/contact'))
-            ->line('Thank you for using our application!');
+            ->subject('New Contact Form Submission')
+            ->greeting('Hello, ' . $this->user->name . '!')
+            ->line('You have a new contact form submission.')
+            ->line('Name: ' . $this->formData['first_name'] . ' ' . $this->formData['last_name'])
+            ->line('Email: ' . $this->formData['email'])
+            ->line('Company: ' . $this->formData['company'] ?? '-')
+            ->line('Subject: ' . $this->formData['subject'])
+            ->line('Message: ' . $this->formData['message']);
+
     }
 
-    /**
-     * Get the array representation of the notification.
-     *
-     * @return array<string, mixed>
-     */
-    public function toArray(object $notifiable): array
+    public function toDatabase($notifiable): array
     {
+
         return [
-            //
+            'first_name' => $this->formData['first_name'],
+            'last_name' => $this->formData['last_name'],
+            'email' => $this->formData['email'],
+            'company' => $this->formData['company'] ?? null,
+            'subject' => $this->formData['subject'],
+            'message' => $this->formData['message'],
         ];
     }
 
-   }
+    public function toArray($notifiable): array
+    {
+        return $this->toDatabase($notifiable);
+    }
+}

@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Http\Livewire\NotificationsDropdown;
 use App\Models\Contact;
 use App\Policies\ContactPolicy;
 use Illuminate\Support\Facades\Gate;
@@ -14,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+
     }
 
     /**
@@ -23,5 +24,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Gate::policy(Contact::class, ContactPolicy::class);
+
     }
 }

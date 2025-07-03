@@ -13,7 +13,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" class=""></path>
                             </svg>
                         </h4>
-                        <p class="px-1 pt-0 mt-1 text-zinc-300 sm:text-lg py-7" x-transition:enter="transition-all ease-out duration-300" x-transition:enter-start="opacity-0 transform -translate-y-4" x-transition:enter-end="opacity-100 transform -translate-y-0" x-transition:leave="transition-all ease-out hidden duration-200" x-transition:leave-start="opacity-100 transform -translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-4" x-show="show" style="display: none;">I've been crafting digital experiences professionally for over 4 years, specializing in full-stack web development.</p>
+                        <p class="px-1 pt-0 mt-1 text-zinc-300 sm:text-lg py-7" x-transition:enter="transition-all ease-out duration-300" x-transition:enter-start="opacity-0 transform -translate-y-4" x-transition:enter-end="opacity-100 transform -translate-y-0" x-transition:leave="transition-all ease-out hidden duration-200" x-transition:leave-start="opacity-100 transform -translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-4" x-show="show" style="display: none;">I've been crafting digital experiences professionally for over 9 years, specializing in full-stack web development.</p>
                     </div>
                     <!-- Question 2 -->
                     <div x-data="{ show: false }" class="relative overflow-hidden text-white select-none">
