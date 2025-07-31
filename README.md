@@ -1,66 +1,84 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <a href="https://keithprinkey.bio" target="_blank">
+    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300" alt="Laravel Logo">
+  </a>
 </p>
 
-## About Laravel
+<h1 align="center">keithprinkey.bio – Developer Portfolio</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  <strong>Built with Laravel, Livewire, TailwindCSS, and deployed via CI/CD on a self-hosted server.</strong>
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p align="center">
+  <a href="https://github.com/KeithPrinkey-it/keithprinkey.bio/actions"><img src="https://github.com/KeithPrinkey-it/keithprinkey.bio/actions/workflows/main.yml/badge.svg" alt="CI Status"></a>
+  <a href="https://keithprinkey.bio">🔗 Visit Live Site</a>
+</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## ✨ Overview
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+This is my personal portfolio website, live at [keithprinkey.bio](https://keithprinkey.bio), showcasing my experience as a **Senior Full-Stack Laravel Developer**. It includes real-world projects, open-source contributions, API integrations, and a CI/CD pipeline for automated deployment.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+The site is **powered by Laravel 11**, **Livewire v3**, **TailwindCSS**, and deployed on a **self-hosted OVH VPS** with GitHub-based deployment.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🛠️ Tech Stack
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+| Layer           | Tools Used                                           |
+|----------------|-------------------------------------------------------|
+| Backend         | Laravel 11, Livewire, PHP 8.2                        |
+| Frontend        | Blade Components, Alpine.js, TailwindCSS            |
+| CI/CD           | GitHub Actions, Git Hooks, Plesk CLI                |
+| DevOps / Infra  | OVH VPS, Nginx, MySQL, CloudPanel, Varnish Cache    |
+| Hosting         | Self-managed server with SSL (Name.com)             |
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## 🚀 Features
 
-## Contributing
+- Custom Blade components for navigation, forms, buttons, alerts
+- Fully integrated Git-based deployment from GitHub to production
+- Responsive layout with modern Tailwind design
+- Secure and performant with OpenSSH, Nginx, and Varnish
+- Linked projects include League Manager App, Shop4Charities, and more
+- Uses structured metadata (OpenGraph, SEO schema) for rich previews
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🧑‍💻 Projects Featured
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- [League Manager App](https://leaguemanagerapp.info) – Laravel-powered eSports league manager integrated with EA APIs
+- [Shop4Charities](https://shop4charities.org) – Donation-based Laravel SaaS for non-profits
+- [HVAC Booking Platform](https://a-millshvac.com) – Laravel-based scheduling portal for contractors
+- [AL-Anon Meeting Finder](https://meetings.al-anon.org/electronic-meeting-page/) – TypeScript integration inside WordPress
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 📸 Screenshots
 
-## License
+> (Optional: Add screenshots to `public/` folder and embed here)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## 🧠 Philosophy
+
+> “I believe in building maintainable, secure, and user-focused applications. I don’t just write code — I architect real-world systems that scale.”
+
+---
+
+## 🤝 Contact
+
+- 📫 Email: [jobs@keithprinkey.bio](mailto:jobs@keithprinkey.bio)
+- 💼 LinkedIn: [linkedin.com/in/keith-prinkey-it](https://linkedin.com/in/keith-prinkey-it)
+- 🌐 Website: [keithprinkey.bio](https://keithprinkey.bio)
+
+---
+
+## 🪪 License
+
+This project is licensed under [MIT License](https://opensource.org/licenses/MIT).
+
+---
