@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://keithprinkey.bio" target="_blank">
-    <img src="[https://keithprinkey.bio/storage/logos/78b5f853-b9c3-4c6d-b41a-b716a000d1e3.jpeg](https://keithprinkey.bio/storage/logos/78b5f853-b9c3-4c6d-b41a-b716a000d1e3.jpeg)" width="300" alt="Laravel Logo">
+    <img src="https://keithprinkey.bio/storage/logos/78b5f853-b9c3-4c6d-b41a-b716a000d1e3.jpeg" width="300" alt="Laravel Logo">
   </a>
 </p>
 
