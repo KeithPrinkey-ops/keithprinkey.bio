@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://keithprinkey.bio" target="_blank">
-    <img src="https://github.com/KeithPrinkey-ops/keithprinkey.bio/blob/main/storage/app/public/logos/78b5f853-b9c3-4c6d-b41a-b716a000d1e3.jpe)" width="300" alt="Laravel Logo">
+    <img src="http://raw.githubusercontent.com/KeithPrinkey-ops/keithprinkey.bio/refs/heads/main/storage/app/public/logos/78b5f853-b9c3-4c6d-b41a-b716a000d1e3.jpeg" width="300" alt="Laravel Logo">
   </a>
 </p>
 
