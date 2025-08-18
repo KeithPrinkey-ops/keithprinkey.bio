@@ -15,6 +15,7 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
 
+
                 </div>
             </div>
 
@@ -109,7 +110,9 @@
                                     {{ __('API Tokens') }}
                                 </x-dropdown-link>
                             @endif
-
+                            <x-dropdown-link href="{{ route('notifications.index') }}">
+                                {{ __('Notifications') }}
+                            </x-dropdown-link>
                             <div class="border-t border-gray-200 dark:border-gray-600"></div>
 
                             <!-- Authentication -->
@@ -165,6 +168,9 @@
                 <!-- Account Management -->
                 <x-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
                     {{ __('Profile') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link href="{{ route('notifications.index') }}" :active="request()->routeIs('notifications.index')">
+                    {{ __('Notifications') }}
                 </x-responsive-nav-link>
 
                 @if (Laravel\Jetstream\Jetstream::hasApiFeatures())

@@ -7,6 +7,9 @@ use App\Livewire\Forms\ContactForm;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ResumeController;
 use App\Livewire\Forms\BlogPostForm;
+use App\Models\Post;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 Route::middleware([
     'auth:sanctum',
@@ -17,7 +20,7 @@ Route::middleware([
         ->name('dashboard');
 });
 
-Route::view('/  ', 'home.home')->name('home');
+Route::view('/', 'home.home')->name('home');
 Route::view('/about', 'about.about')->name('about');
 Route::view('/skills', 'skills.skills')->name('skills');
 Route::view('/tech-stack', 'tech-stack.tech-stack')->name('tech-stack');
@@ -46,3 +49,52 @@ Route::get('/privacy', function () {
     $policy = Str::markdown($markdown);
     return view('policy', compact('policy'));
 })->name('privacy-policy');
+
+Route::middleware('auth')->get('/notifications', [App\Http\Controllers\NotificationController::class, 'index'])->name('notifications.index');
+
+Route::view('/pages/world-esports', 'pages.world-esports')->name('world-esports');
+
+Route::get('/sitemap.xml', function () {
+    $urls = [];
+
+    // ---- static, public pages
+    $add = function (string $loc, string $changefreq = 'monthly', string $priority = '0.7', ?string $lastmod = null) use (&$urls) {
+        $urls[] = compact('loc', 'changefreq', 'priority', 'lastmod');
+    };
+
+    $add(route('home'),                'monthly', '1.0');
+    $add(route('about'),               'yearly',  '0.6');
+    $add(route('skills'),              'yearly',  '0.6');
+    $add(route('tech-stack'),          'yearly',  '0.5');
+    $add(route('resume.index'),        'yearly',  '0.6');
+    $add(route('contact-form'),        'yearly',  '0.5');
+    $add(route('blog'),                'weekly',  '0.8');
+    $add(route('terms'),               'yearly',  '0.3');
+    $add(route('privacy-policy'),      'yearly',  '0.3');
+    $add(route('world-esports'),       'monthly', '0.8');
+
+    // Excluded on purpose (auth/API/download):
+    // /dashboard, /notifications, /resume/download, /contact-json
+
+    // ---- dynamic blog posts (adjust the "published" filter to match your schema)
+    $posts = Post::query()
+        ->whereNotNull('created_at')   // or ->where('status','published')
+        ->orderByDesc('updated_at')
+        ->get(['slug', 'updated_at']);
+
+    foreach ($posts as $post) {
+        $add(
+            route('blog.show', $post->slug),
+            'weekly',
+            '0.9',
+            optional($post->updated_at)->toAtomString()
+        );
+    }
+
+    return response()
+        ->view('sitemap', ['urls' => $urls])
+        ->header('Content-Type', 'application/xml; charset=UTF-8');
+})->name('sitemap');
+
+
+
