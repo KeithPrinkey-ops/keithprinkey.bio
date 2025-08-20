@@ -1,10 +1,9 @@
 {{-- resources/views/livewire/contact.blade.php --}}
 
-<x-guest-layout>
     <x-form-section submit="submitContact">
         <x-slot name="title">
             <x-section-title>
-                <x-slot name="title">Contact Us</x-slot>
+                <x-slot name="title">Contact Keith Prinkey</x-slot>
                 <x-slot name="description">Need to ask us a question?</x-slot>
             </x-section-title>
         </x-slot>
@@ -60,4 +59,4 @@
             <x-button type="submit">Send Message</x-button>
         </x-slot>
     </x-form-section>
-</x-guest-layout>
+

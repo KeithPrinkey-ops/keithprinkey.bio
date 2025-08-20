@@ -46,7 +46,6 @@ class ContactFormNotification extends Notification
 
     public function toDatabase($notifiable): array
     {
-
         return [
             'first_name' => $this->formData['first_name'],
             'last_name' => $this->formData['last_name'],

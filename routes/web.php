@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PagesController;
 use App\Livewire\BlogPage;
 use App\Livewire\Blog\ShowPost;
 use App\Livewire\Forms\ContactForm;
@@ -10,10 +11,11 @@ use App\Livewire\Forms\BlogPostForm;
 use App\Models\Post;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
+use App\Http\Controllers\NotificationController;
 
 Route::middleware([
     'auth:sanctum',
-    config('jetstream.auth_session'),
+    config('jetstream.auth_session', 'web'),  // Provide a default string value
     'verified',
 ])->group(function () {
     Route::get('/dashboard', BlogPostForm::class)
@@ -50,9 +52,17 @@ Route::get('/privacy', function () {
     return view('policy', compact('policy'));
 })->name('privacy-policy');
 
-Route::middleware('auth')->get('/notifications', [App\Http\Controllers\NotificationController::class, 'index'])->name('notifications.index');
+Route::middleware('auth:web')->get('/notifications', [NotificationController::class, 'index'])->name('notifications.index');
+Route::post('/notifications/{notification}/read', [NotificationController::class, 'markAsRead'])->name('notifications.read');
+Route::delete('/notifications/{notification}', [NotificationController::class, 'destroy'])->name('notifications.destroy');
 
+Route::get('/pages', [PagesController::class, 'index'])->name('pages.index');
 Route::view('/pages/world-esports', 'pages.world-esports')->name('world-esports');
+Route::view('/pages/al-anon', 'pages.al-anon')->name('al-anon');
+Route::view('/pages/al-mills-hvac' , 'pages.al-mills-hvac')->name('al-mills-hvac');
+Route::get('/pages/{page:route_name}', [PagesController::class, 'show'])
+    ->where('page', '^(?!world-esports|al-anon|al-mills-hvac)[A-Za-z0-9\-_]+$')
+    ->name('pages.show');
 
 Route::get('/sitemap.xml', function () {
     $urls = [];

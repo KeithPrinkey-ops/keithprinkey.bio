@@ -45,7 +45,7 @@
                     disputes, and RBAC—plus resilient third-party integrations.
                 </p>
                 <div class="mt-8 flex flex-wrap gap-3">
-                    <a href="https://worldesports.app" class="rounded-2xl px-5 py-3 bg-indigo-500 hover:bg-indigo-400 font-medium">Visit worldesports.app</a>
+                    <a href="https://worldesports.app" target="_blank" class="rounded-2xl px-5 py-3 bg-indigo-500 hover:bg-indigo-400 font-medium">Visit worldesports.app</a>
                     <a href="{{ route('contact-form') }}" class="rounded-2xl px-5 py-3 border border-white/20 hover:bg-white/10">Book a demo</a>
                 </div>
                 <div class="mt-6 flex flex-wrap gap-2 text-xs">
@@ -77,7 +77,7 @@
 
     {{-- Features --}}
     <section class="mx-auto max-w-7xl px-6 py-12">
-        <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Key Features</h2>
+        <h2 class="text-2xl font-bold text-gray-400 dark:text-white">Key Features</h2>
         <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach ([
                 ['Multi-Tenancy','Support multiple leagues with isolated data.'],
@@ -139,7 +139,7 @@
      ];
         @endphp
 
-        <h2 class="text-2xl font-bold">Screenshots</h2>
+        <h2 class="text-2xl font-bold text-gray-400">Screenshots</h2>
         <x-screenshot-gallery :shots="$shots"
                               base="storage/images/world-esports"
                               :initial="6" />
@@ -152,7 +152,7 @@
 
     {{-- FAQ (Alpine) --}}
     <section class="mx-auto max-w-7xl px-6 py-10" x-data="{open:null}">
-        <h2 class="text-2xl font-bold text-gray-900 dark:text-white">FAQ</h2>
+        <h2 class="text-2xl font-bold text-gray-400 dark:text-white">FAQ</h2>
         @php $faqs = [
             ['Can it power seasonal leagues and weekend cups?','Yes—supports recurring seasons and one-offs with multiple formats.'],
             ['Is there an admin workflow for disputes?','Players submit proofs; staff review with role-gated actions and audit trails.'],

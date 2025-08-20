@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ContactRequest;
 use App\Http\Resources\ContactResource;
 use App\Models\Contact;
+use App\Models\User;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Laravel\Jetstream\InteractsWithBanner;
 
@@ -15,9 +16,8 @@ class ContactController extends Controller
 
     public function index()
     {
-        $this->authorize('viewAny', Contact::class);
-        // Return the Blade view with the contact form
-        return view('contact.contact');
+        $this->authorize('viewAny', User::class);
+        return ContactResource::collection(Contact::all());
     }
 
     public function store(ContactRequest $request)

@@ -3,6 +3,8 @@
 namespace App\Livewire\Forms;
 
 use App\Models\Post;
+use App\Notifications\NewPostNotification;
+use Illuminate\Support\Facades\Auth;
 use Laravel\Jetstream\InteractsWithBanner;
 use Livewire\Attributes\Validate;
 use Livewire\Form;
@@ -80,7 +82,7 @@ class BlogPostForm extends Component
             'views' => $this->views,
         ]);
 
-
+        Auth::user()->notify(new NewPostNotification($post));
         $this->reset(['hero_image', 'thumb_image']);
         // Optionally, you can redirect or show a success message
         session()->flash('message', 'Blog post created successfully!');

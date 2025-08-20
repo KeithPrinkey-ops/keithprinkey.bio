@@ -3,7 +3,7 @@
     // [ ['file.png','Caption'], ... ]
     'shots' => [],
     // base path for your storage symlink
-    'base' => 'storage/images/world-esports',
+    'base' => 'storage/images',
     // how many to show before "Show all"
     'initial' => 6,
 ])
