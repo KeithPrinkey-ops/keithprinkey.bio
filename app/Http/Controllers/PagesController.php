@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-// app/Http/Controllers/PageController.php
-
 use App\Models\Page; // Make sure the Page model is imported
 
 class PagesController extends Controller

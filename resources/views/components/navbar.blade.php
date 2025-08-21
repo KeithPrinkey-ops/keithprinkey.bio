@@ -1,6 +1,4 @@
-<div class="lg:p-8 xl:max-w-7xl mx-auto">
-    <div style="background-image: radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#63e 69.27%,#fff 100%);" class="rounded-2xl lg:rounded-[3rem] overflow-hidden relative">
-        <div class="mx-auto relative w-full max-w-7xl z-20">
+<div class="mx-auto relative w-full max-w-7xl z-20">
             <div class="mx-auto relative w-full lg:px-24 flex flex-col md:flex-row md:items-center md:justify-between md:px-6 px-8 py-3" x-data="{ open: false }">
                 <div class="text-white text-sm items-center flex flex-row justify-between lg:justify-start">
                     <a href="/" class="lg:pr-8 text-lg font-semibold">Keith Prinkey</a>

@@ -10,29 +10,52 @@
 </head>
 <body>
     <!-- Header 17 -->
-    <section class="overflow-hidden relative h-auto bg-black">
- <x-navbar />
-        <div class="relative z-10">
-            <div class="absolute inset-0 bg-black bg-opacity-50">
-        </div>
-            </div>
-            <div class="items-center relative w-full z-20 pt-40 pb-48 lg:px-24 max-w-7xl md:px-12 mx-auto px-5">
-                <div class="items-center w-full relative col-span-8 gap-12 z-30 -translate-y-5 lg:inline-flex m-auto">
-                    <div class="max-w-full lg:text-left sm:text-center">
-                        <h1 class="font-semibold pb-2 md:text-5xl xl:text-8xl xl:leading-none xl:tracking-tightest tracking-tight text-3xl inline-block bg-clip-text bg-gradient-to-r text-transparent from-gray-300 via-white to-gray-500">I Build Beautiful Websites</h1>
-                        <p class="text-white font-light lg:text-xl tracking-tight lg:leading-7 opacity-90 max-w-xl sm:mx-auto lg:mx-0 mt-4 text-lg">I'm Keith Prinkey, a web developer specializing in Laravel, PHP, and TailwindCSS. I craft intuitive, responsive, and powerful digital solutions.</p>
-                        <div class="items-center flex gap-3 flex-col mt-8 mb-8 sm:flex-row">
-                            <a href="/contact" class="items-center text-base font-medium justify-center focus:outline-none text-black inline-flex bg-white border-2 border-white duration-200 focus-visible:outline-white focus-visible:ring-white hover:bg-transparent hover:border-white lg:w-auto px-5 py-2.5 rounded-full text-center hover:text-white w-full tails-selected-element">Get a consult for your website</a>
+    <section class="overflow-hidden relative h-auto bg-black tails-selected-element">
+        <div class="lg:p-8 xl:max-w-7xl mx-auto">
+            <div style="background-image: radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#63e 69.27%,#fff 100%);" class="rounded-2xl lg:rounded-[3rem] overflow-hidden relative">
+                <div class="mx-auto relative w-full max-w-7xl z-20">
+                    <div class="mx-auto relative w-full lg:px-24 flex flex-col md:flex-row md:items-center md:justify-between md:px-6 px-8 py-3" x-data="{ open: false }">
+                        <div class="text-white text-sm items-center flex flex-row justify-between lg:justify-start">
+                            <a href="#_" class="lg:pr-8 text-lg font-semibold">Keith Prinkey</a>
+                            <button @click="open = !open" class="text-white focus:outline-none inline-flex items-center justify-center md:hidden p-2 translate-x-4">
+                                <svg class="w-6 h-6" :class="{ 'hidden': open }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                                </svg>
+                                <svg class="w-6 h-6 hidden" :class="{ 'hidden': !open }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
                         </div>
+                        <nav :class="{'flex': open, 'hidden': !open}" class="items-center flex-col flex-grow hidden pl-8 md:flex md:flex-row md:justify-end md:pb-0">
+                            <a href="/skills" class="text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300 lg:ml-auto">Skills</a>
+                            <a href="/resume" class="text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Resume</a>
+                            <a href="{{ route('pages.index') }}" class="text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Projects</a>
+                            <a href="/about" class="text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Learn about me</a>
+                            <a href="/tech-stack" class="text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Tech Stack</a>
+                            <a href="blog" class="text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Blog</a>
+                            <div class="items-center inline-flex gap-2 lg:ml-auto md:mt-0 mt-5 list-none">
+                                <a href="/contact" class="items-center text-sm font-medium justify-center focus:outline-none text-black inline-flex bg-white border-2 border-white duration-200 focus-visible:outline-white focus-visible:ring-white hover:bg-transparent hover:border-white lg:w-auto px-4 py-1.5 rounded-full text-center hover:text-white w-full">Get Started</a>
+                            </div>
+                        </nav>
                     </div>
                 </div>
-
-                <div class="bg-gradient-to-r from-transparent via-trasnparent w-1/2 h-full opacity-20 right-0 to-black absolute bottom-0 z-20"><div class="tails-hover-element">div</div></div>
-                <img alt="hero" class="w-full absolute bottom-0 right-0 z-0 mx-auto translate-y-20 md:translate-y-56 scale-110 lg:-translate-x-10 drop-shadow-xl opacity-100 lg:ml-auto" src="https://cdn.devdojo.com/images/february2023/liquid-img.png">
+                <div class="items-center relative w-full z-20 pt-40 pb-48 lg:px-24 max-w-7xl md:px-12 mx-auto px-5">
+                    <div class="items-center w-full relative col-span-8 gap-12 z-30 -translate-y-5 lg:inline-flex m-auto">
+                        <div class="max-w-full lg:text-left sm:text-center">
+                            <h1 class="font-semibold pb-2 md:text-5xl xl:text-8xl xl:leading-none xl:tracking-tightest tracking-tight text-3xl inline-block bg-clip-text bg-gradient-to-r text-transparent from-gray-300 via-white to-gray-500">Build Beautiful Websites</h1>
+                            <p class="text-white font-light lg:text-xl tracking-tight lg:leading-7 opacity-90 max-w-xl sm:mx-auto lg:mx-0 mt-4 text-lg">I'm Keith Prinkey, a web developer specializing in Laravel, PHP, and TailwindCSS. I craft intuitive, responsive, and powerful dig</p>
+                            <div class="items-center flex gap-3 flex-col mt-8 mb-8 sm:flex-row">
+                                <a href="#_" class="items-center text-base font-medium justify-center focus:outline-none text-black inline-flex bg-white border-2 border-white duration-200 focus-visible:outline-white focus-visible:ring-white hover:bg-transparent hover:border-white lg:w-auto px-5 py-2.5 rounded-full text-center hover:text-white w-full">Get a consult for your website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://cdn.devdojo.com/images/february2023/header-svg.svg" class="h-96 absolute right-0 z-30 bottom-0 opacity-0 w-auto">
+                    <div class="bg-gradient-to-r from-transparent via-trasnparent w-1/2 h-full opacity-20 right-0 to-black absolute bottom-0 z-20"></div>
+                    <img alt="hero" class="w-full absolute bottom-0 right-0 z-0 mx-auto translate-y-20 md:translate-y-56 scale-110 lg:-translate-x-10 drop-shadow-xl opacity-100 lg:ml-auto" src="https://cdn.devdojo.com/images/february2023/liquid-img.png">
+                </div>
             </div>
         </div>
-    </div>
-</section><section class="w-full bg-gray-900">
+    </section><section class="w-full bg-gray-900">
 
 </section><section class="w-full pt-24 pb-8 overflow-hidden bg-black bg-cover lg:pb-32">
     <div class="max-w-2xl px-8 pb-10 mx-auto space-y-8 text-white md:max-w-3xl lg:px-5 xl:px-0">
@@ -127,3 +150,4 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </body>
 </html>
+
