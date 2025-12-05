@@ -22,7 +22,7 @@ This site showcases full-stack projects, service offerings, and live component d
 ## 💼 Projects Featured
 
 - **League Manager App** – B2B SaaS platform for eSports and youth league scheduling, stats, and communications
-- **Shop4Charities** – Affiliate platform using CJ and Rakuten APIs with a rotating nonprofit donation engine
+- **A Mills HVAC** – Lead generation website template used for this HVAC company
 - **Al-Anon Meeting Finder** – Custom-built replacement for plugin-based filtering, integrating TypeScript and API-based data sync
 
 ---
