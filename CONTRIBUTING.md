@@ -14,54 +14,6 @@ This repository meets GitHub’s Education Pack selection criteria:
 
 ---
 
-## 📁 Getting Started
-
-1. **Fork the Repository**
-   Click the "Fork" button in the upper right corner of the GitHub page.
-
-2. **Clone Your Fork**
-
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/keithprinkey.bio.git
-   cd keithprinkey.bio
-   ```
-
-3. **Set Up Your Environment**
-
-   ```bash
-   cp .env.example .env
-   composer install
-   npm install && npm run dev
-   php artisan key:generate
-   php artisan migrate --seed
-   ```
-
-4. **Create a New Branch**
-
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-5. **Make Your Changes**
-   Follow the project structure and code style.
-
-6. **Commit Your Changes**
-
-   ```bash
-   git commit -m "Add: your feature description"
-   ```
-
-7. **Push to GitHub**
-
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-
-8. **Submit a Pull Request**
-   Open a PR describing what you’ve added or changed.
-
----
-
 ## 🧩 Types of Contributions Welcome
 
 * Fixing open issues (see the [Issues](../../issues) tab)
