@@ -53,4 +53,5 @@ npm install && npm run dev
 php artisan key:generate
 php artisan migrate --seed
 
+```
 ![License: Educational Use Only](https://img.shields.io/badge/license-Educational--Use--Only-blueviolet?style=for-the-badge)
