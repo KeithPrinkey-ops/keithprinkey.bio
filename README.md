@@ -1,6 +1,6 @@
 # Keith Prinkey Portfolio – keithprinkey.bio
 
-Welcome to the source code for [keithprinkey.bio](https://keithprinkey.bio), the personal developer portfolio of Keith Prinkey SR, Chief Technical Officer of World eSports.
+Welcome to the source code for [keithprinkey.bio](https://keithprinkey.bio), the personal developer portfolio of Keith Prinkey SR.
 
 This site showcases full-stack projects, service offerings, and live component demos built using the Laravel ecosystem and additional technologies.
 
