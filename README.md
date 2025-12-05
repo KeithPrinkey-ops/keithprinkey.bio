@@ -29,7 +29,7 @@ This site showcases full-stack projects, service offerings, and live component d
 
 ## 🧩 Services Offered
 
-> Visit `/services` or scroll to the Services section on the homepage.
+> Visit `/services`
 
 - Laravel / PHP Web App Development
 - API Integration (Discord, Plesk, Affiliate, etc.)
