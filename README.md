@@ -40,18 +40,4 @@ This site showcases full-stack projects, service offerings, and live component d
 
 ---
 
-## 🔧 Development Setup
-
-```bash
-# Clone this repository
-https://github.com/keithprinkey-ops/keithprinkey.bio.git
-
-cd keithprinkey.bio
-cp .env.example .env
-composer install
-npm install && npm run dev
-php artisan key:generate
-php artisan migrate --seed
-
-```
 ![License: Educational Use Only](https://img.shields.io/badge/license-Educational--Use--Only-blueviolet?style=for-the-badge)
