@@ -3,7 +3,7 @@
 ### ✅ `LICENSE`
 
 ```text
-MIT License
+
 
 Copyright © 2025 Keith Prinkey
 
