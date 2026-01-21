@@ -15,8 +15,7 @@
                         @foreach($trending as $post)
                             <a href="{{ route('blog.show', $post) }}"
                                class="rounded-xl relative flex flex-col items-start justify-end col-span-12 md:col-span-4 lg:col-span-3 px-5 pb-5 overflow-hidden bg-zinc-800 cursor-pointer h-96 group">
-                                <img src="{{ asset($post->hero_image_path) }}"
-                                     class="absolute inset-0 w-full h-full object-cover object-center transition duration-300 ease-out transform scale-100 group-hover:scale-105" />
+                                <img src="{{ asset($post->hero_image_path) }}" alt="Hero Image" class="absolute inset-0 w-full h-full object-cover object-center transition duration-300 ease-out transform scale-100 group-hover:scale-105" />
                                 <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-transparent to-zinc-900 opacity-90"></span>
                                 <span class="rounded-xl relative z-10 inline-block px-2 py-0.5 mb-3 text-xs font-medium uppercase bg-{{ $post->category->color_class }}-500 text-white">
         {!! $post->category->name !!}
@@ -55,8 +54,7 @@
                                 @foreach($mainCat->posts as $post)
                                     <div class="flex items-center py-5 border-b border-zinc-900">
                                         <a href="{{ route('blog.show',$post) }}" class="w-1/3 h-40 overflow-hidden rounded-lg">
-                                            <img src="{{ $post->thumb_image_path }}"
-                                                 class="w-full h-full object-cover transition duration-300 ease-out transform scale-100 hover:scale-105" />
+                                            <img src="{{ asset($post->hero_image_path) }}" alt="Blog Individual Image" class="w-full h-full object-cover transition duration-300 ease-out transform scale-100 hover:scale-105" />
                                         </a>
                                         <div class="w-2/3 pl-5">
                                             <h2 class="mb-3 text-xl font-bold leading-tight text-white">
@@ -82,8 +80,7 @@
                                 @foreach($sideCat->posts as $post)
                                     <a href="{{ route('blog.show',$post) }}" class="relative block w-full h-64 overflow-hidden rounded-lg group">
                                         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-zinc-900 opacity-90"></div>
-                                        <img src="{{ $post->hero_image_path }}"
-                                             class="object-cover object-bottom w-full h-full transition duration-300 ease-out transform scale-100 hover:scale-105" />
+                                        <img src="{{ $post->hero_image_path }}" alt="Blog Post Image" class="object-cover object-bottom w-full h-full transition duration-300 ease-out transform scale-100 hover:scale-105" />
                                     </a>
                                     <h2 class="mt-5 mb-3 text-xl font-bold leading-tight text-white">
                                         <a href="{{ route('blog.show',$post) }}">{{ $post->title }}</a>

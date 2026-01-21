@@ -18,7 +18,7 @@
             <div class="flex flex-col justify-between text-center md:flex-row">
                 <p class="order-last text-sm leading-tight text-zinc-500 md:order-first"> Crafted with <a href="https://laravel.com">Laravel</a> and <a href="https://tailwindcss.com" class="">Tailwind</a>. Built with ❤️ 😍 by <a href="https://linkedin.com/in/keith-prinkey-it">Keith Prinkey.</a> </p>
                 <ul class="flex flex-row justify-center pb-3 -ml-4 -mr-4 text-sm">
-                    <li class=""> <a href="/contact" class="px-4 text-zinc-500 hover:text-white">Contact</a> </li>
+                    <li class=""> <a href="{{ route('leads.capture') }}" class="px-4 text-zinc-500 hover:text-white">Contact</a> </li>
                     <li class=""> <a href="/about" class="px-4 text-zinc-500 hover:text-white">About me</a> </li>
                     <li class=""> <a href="/tech-stack" class="px-4 text-zinc-500 hover:text-white">Tech Stack</a> </li>
                     <li class=""> <a href="/terms" class="px-4 text-zinc-500 hover:text-white">Terms</a></li>

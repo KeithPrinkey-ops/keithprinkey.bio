@@ -2,10 +2,12 @@
 
 namespace App\Livewire\Blog;
 
+use AllowDynamicProperties;
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Model;
 use Livewire\Component;
 use App\Models\Post;
+#[AllowDynamicProperties]
 class ShowPost extends Component
 {
     public Post $post;

@@ -33,20 +33,20 @@
     @endpush>
 
     {{-- Hero --}}
-    <section class="bg-slate-800 text-white">
+    <section class="dark:bg-black bg-slate-200 dark:text-white">
         <div class="mx-auto max-w-7xl px-6 py-20 grid lg:grid-cols-2 gap-10 items-center">
             <div>
                 <h1 class="text-4xl font-extrabold leading-tight">
-                    AL-ANON <span class="block text-indigo-400">Online Meeting Finder</span>
+                    AL-ANON <span class="block dark:text-gray-200 text-indigo-400">Online Meeting Finder</span>
                 </h1>
-                <p class="mt-6 text-slate-300 max-w-prose">
+                <p class="mt-6 dark:text-gray-200 max-w-prose">
                     Built with TypeScript, I had to integrate this GitHub repo into AL-ANON's WordPress website with over 30 plugins at the time of implementation. My work replaced almost 10 plugins that were attempting to achieve what I accomplished with one GitHub repo.
                 </p>
                 <div class="mt-8 flex flex-wrap gap-3">
                     <a href="https://al-anon.org" target="_blank" class="rounded-2xl px-5 py-3 bg-indigo-500 hover:bg-indigo-400 font-medium">Visit AL-ANON Meeting Finder</a>
-                    <a href="https://meetings.al-anon.org/electronic-meeting-page/" class="rounded-2xl px-5 py-3 border border-white/20 hover:bg-white/10">Find a meeting</a>
+                    <a href="https://meetings.al-anon.org/electronic-meeting-page/" class="rounded-2xl px-5 py-3 border dark:border-white/50 dark:hover:bg-indigo-200 hover:bg-indigo-200">Find a meeting</a>
                 </div>
-                <div class="mt-6 flex flex-wrap gap-2 text-xs">
+                <div class="mt-6 flex flex-wrap gap-2 text-xs dark:text-gray-800 dark:text-gray-200">
                     @foreach (['WordPress',
                                'PHP',
                                'TypeScript',
@@ -60,7 +60,7 @@
                                'Database Administration',
                                'Performance Optimization',
                       ] as $chip)
-                        <span class="px-3 py-1 rounded-full bg-white/10">{{ $chip }}</span>
+                        <span class="px-3 py-1 rounded-full bg-white/10 dark:bg-gray-200">{{ $chip }}</span>
                     @endforeach
                 </div>
             </div>
@@ -144,7 +144,7 @@
             <h2 class="text-2xl font-bold">Want this kind of development work?</h2>
             <p class="mt-2 text-white/90">I can tailor this meeting finder to your rules, branding, and workflow.</p>
             <div class="mt-6 flex flex-wrap gap-3">
-                <a href="{{ route('contact-form') }}" class="rounded-2xl bg-white/10 hover:bg-white/20 px-5 py-3">Request a quote</a>
+                <a href="{{ route('leads.capture') }}" class="rounded-2xl bg-white/10 hover:bg-white/20 px-5 py-3">Request a quote</a>
                 <a href="https://meetings.al-anon.org/electronic-meeting-page/" class="rounded-2xl bg-white text-slate-900 px-5 py-3">Visit AL-ANON</a>
             </div>
         </div>

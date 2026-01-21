@@ -6,7 +6,6 @@ use Livewire\Component;
 use App\Models\Post;
 use App\Models\Category;
 use Livewire\WithPagination;
-
 class BlogPage extends Component
 {
     use WithPagination;
@@ -32,6 +31,7 @@ class BlogPage extends Component
 
     public function render()
     {
+
 
         $trending = Post::with('category')
             ->orderByDesc('views')

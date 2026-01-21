@@ -33,22 +33,22 @@
     @endpush>
 
     {{-- Hero --}}
-    <section class="bg-slate-800 text-white">
+    <section class="dark:bg-black bg-slate-200 dark:text-white">
         <div class="mx-auto max-w-7xl px-6 py-20 grid lg:grid-cols-2 gap-10 items-center">
             <div>
                 <h1 class="text-4xl font-extrabold leading-tight">
-                    World eSports <span class="block text-indigo-400">League & Tournament Platform</span>
+                    World eSports <span class="block dark:text-gray-200 text-indigo-400">League & Tournament Platform</span>
                 </h1>
-                <p class="mt-6 text-slate-300 max-w-prose">
+                <p class="mt-6 dark:text-gray-200 max-w-pros">
                     Built with Laravel, Jetstream, Livewire, and TailwindCSS, World eSports powers
                     end-to-end competition management—teams, players, scheduling, standings, stats,
                     disputes, and RBAC—plus resilient third-party integrations.
                 </p>
                 <div class="mt-8 flex flex-wrap gap-3">
                     <a href="https://worldesports.app" target="_blank" class="rounded-2xl px-5 py-3 bg-indigo-500 hover:bg-indigo-400 font-medium">Visit worldesports.app</a>
-                    <a href="{{ route('contact-form') }}" class="rounded-2xl px-5 py-3 border border-white/20 hover:bg-white/10">Book a demo</a>
+                    <a href="{{ route('leads.capture') }}" class="rounded-2xl px-5 py-3 border dark:border-white/50 dark:hover:bg-indigo-200 hover:bg-indigo-200">Book a demo</a>
                 </div>
-                <div class="mt-6 flex flex-wrap gap-2 text-xs">
+                <div class="mt-6 flex flex-wrap gap-2 text-xs dark:text-gray-800 dark:text-gray-200">
                     @foreach (['Laravel 12',
                                'Livewire 3',
                                'Jetstream',
@@ -65,7 +65,7 @@
                                'Google OAuth',
                                'SMPT Email',
                       ] as $chip)
-                        <span class="px-3 py-1 rounded-full bg-white/10">{{ $chip }}</span>
+                        <span class="px-3 py-1 rounded-full bg-white/10 dark:bg-gray-200">{{ $chip }}</span>
                     @endforeach
                 </div>
             </div>
@@ -183,7 +183,7 @@
             <h2 class="text-2xl font-bold">Want this for your league?</h2>
             <p class="mt-2 text-white/90">I can tailor World eSports to your rules, branding, and workflow.</p>
             <div class="mt-6 flex flex-wrap gap-3">
-                <a href="{{ route('contact-form') }}" class="rounded-2xl bg-white/10 hover:bg-white/20 px-5 py-3">Request a quote</a>
+                <a href="{{ route('leads.capture') }}" class="rounded-2xl bg-white/10 hover:bg-white/20 px-5 py-3">Request a quote</a>
                 <a href="https://worldesports.app" class="rounded-2xl bg-white text-slate-900 px-5 py-3">Visit worldesports.app</a>
             </div>
         </div>

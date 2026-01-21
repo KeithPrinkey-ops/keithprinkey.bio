@@ -1,4 +1,4 @@
-<div class="mx-auto relative w-full max-w-7xl z-20">
+<div class="mx-auto bg-gray-800 relative w-full max-w-7xl z-20">
             <div class="mx-auto relative w-full lg:px-24 flex flex-col md:flex-row md:items-center md:justify-between md:px-6 px-8 py-3" x-data="{ open: false }">
                 <div class="text-white text-sm items-center flex flex-row justify-between lg:justify-start">
                     <a href="/" class="lg:pr-8 text-lg font-semibold">Keith Prinkey</a>
@@ -17,9 +17,9 @@
                     <a href="{{ route('pages.index') }}" class="text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Projects</a>
                     <a href="/about" class="text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Learn about me</a>
                     <a href="/tech-stack" class="text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Tech Stack</a>
-                    <a href="blog" class="text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Blog</a>
+                    <a href="/blog" class="text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Blog</a>
                     <div class="items-center inline-flex gap-2 lg:ml-auto md:mt-0 mt-5 list-none">
-                        <a href="/contact" class="items-center text-sm font-medium justify-center focus:outline-none text-black inline-flex bg-white border-2 border-white duration-200 focus-visible:outline-white focus-visible:ring-white hover:bg-transparent hover:border-white lg:w-auto px-4 py-1.5 rounded-full text-center hover:text-white w-full">Get Started</a>
+                        <a href="{{ route('leads.capture') }}" class="items-center text-sm font-medium justify-center focus:outline-none text-black inline-flex bg-white border-2 border-white duration-200 focus-visible:outline-white focus-visible:ring-white hover:bg-transparent hover:border-white lg:w-auto px-4 py-1.5 rounded-full text-center hover:text-white w-full">Get Started</a>
                     </div>
 
                 </nav>

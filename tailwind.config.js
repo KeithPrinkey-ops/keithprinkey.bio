@@ -17,6 +17,13 @@ export default {
         'bg-yellow-500',
         'bg-purple-500',
         // add all colors you use in your DB
+        // Classes for the banner component
+        'bg-indigo-500',
+        'bg-red-700',
+        'bg-gray-500',
+        '[x-cloak]',
+        'from-blue-600',
+        'to-indigo-600'
     ],
     theme: {
         extend: {

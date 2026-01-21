@@ -1,10 +1,9 @@
 <?php
 
-use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PagesController;
 use App\Livewire\BlogPage;
 use App\Livewire\Blog\ShowPost;
-use App\Livewire\Forms\ContactForm;
+use App\Livewire\LeadCaptureForm;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ResumeController;
 use App\Livewire\Forms\BlogPostForm;
@@ -22,22 +21,25 @@ Route::middleware([
         ->name('dashboard');
 });
 
+Route::middleware('auth:sanctum')->get('/admin/icons', function () {$icons = Storage::disk('public')->files('services/icons');
+    return view('admin.icons', compact('icons')); })->name('admin.icons');
+
 Route::view('/', 'home.home')->name('home');
 Route::view('/about', 'about.about')->name('about');
 Route::view('/skills', 'skills.skills')->name('skills');
 Route::view('/tech-stack', 'tech-stack.tech-stack')->name('tech-stack');
 Route::view('/resume', 'resume.resume')->name('resume');
-Route::get('/contact', ContactForm::class)->name('contact-form');
-Route::get('/contact-json', [ContactController::class, 'index'])->name('contact.json');
 Route::get('/resume', [ResumeController::class, 'index'])->name('resume.index');
 Route::get('/resume/download', [ResumeController::class, 'download'])->name('resume.download');
-
 
 Route::get('/blog', BlogPage::class)->name('blog');
 
 Route::get('/blog/{post:slug}', ShowPost::class) // <-- Use ShowPost here
 ->where('post', '^(?!blog$)[A-Za-z0-9\-_]+$')
     ->name('blog.show');
+
+// Lead capture and viewing routes
+Route::get('/leads', LeadCaptureForm::class)->name('leads.capture');
 
 // Add the terms and privacy policy routes for their markdown files
 Route::get('/terms', function () {
@@ -77,7 +79,7 @@ Route::get('/sitemap.xml', function () {
     $add(route('skills'),              'yearly',  '0.6');
     $add(route('tech-stack'),          'yearly',  '0.5');
     $add(route('resume.index'),        'yearly',  '0.6');
-    $add(route('contact-form'),        'yearly',  '0.5');
+    $add(route('leads.capture'),        'yearly',  '0.5');
     $add(route('blog'),                'weekly',  '0.8');
     $add(route('terms'),               'yearly',  '0.3');
     $add(route('privacy-policy'),      'yearly',  '0.3');

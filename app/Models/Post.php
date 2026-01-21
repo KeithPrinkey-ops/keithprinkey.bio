@@ -56,7 +56,7 @@ class Post extends Model
     public function getThumbImageUrlAttribute()
     {
         return $this->thumb_image_path
-            ? \Illuminate\Support\Facades\Storage::disk('public')->url($this->thumb_image_path)
+            ? Storage::disk('public')->url($this->thumb_image_path)
             : null;
     }
     /**

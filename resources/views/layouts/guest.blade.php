@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name') }}</title>
+    <title>{{ $title ?? trim($__env->yieldContent('title')) ?: 'Keith Prinkey — Web Developer' }}</title>
+    <meta name="description"
+          content="{{ $description ?? trim($__env->yieldContent('description')) ?: 'Web developer specializing in Laravel, Livewire, and TailwindCSS.' }}">
+    <link rel="canonical" href="{{ $canonical ?? url()->current() }}">
+    @stack('meta')  {{-- optional extras per-page --}}
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -21,6 +25,7 @@
 </head>
 
 <body class="flex flex-col bg-black min-h-screen antialiased">
+<x-services.services />
 <x-banner />
 <!-- Navbar -->
 <x-navbar />
@@ -28,12 +33,13 @@
 <main class="flex-grow">
     {{ $slot }}
 </main>
-
+<!-- Calendly badge widget begin -->
 <!-- Footer -->
 <x-footer />
 
 <script src="//unpkg.com/alpinejs" defer></script>
 @livewireScripts
+
 
 </body>
 </html>

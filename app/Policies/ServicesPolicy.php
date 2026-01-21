@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\Post;
+use App\Models\Services;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class PostPolicy
+class ServicesPolicy
 {
     use HandlesAuthorization;
 
@@ -15,7 +15,7 @@ class PostPolicy
         return true;
     }
 
-    public function view(User $user, Post $post): bool
+    public function view(User $user, Services $services): bool
     {
         return true;
     }
@@ -25,22 +25,22 @@ class PostPolicy
         return $user->is_admin ?? false;
     }
 
-    public function update(User $user, Post $post): bool
+    public function update(User $user, Services $services): bool
     {
         return $user->is_admin ?? false;
     }
 
-    public function delete(User $user, Post $post): bool
+    public function delete(User $user, Services $services): bool
     {
         return $user->is_admin ?? false;
     }
 
-    public function restore(User $user, Post $post): bool
+    public function restore(User $user, Services $services): bool
     {
         return $user->is_admin ?? false;
     }
 
-    public function forceDelete(User $user, Post $post): bool
+    public function forceDelete(User $user, Services $services): bool
     {
         return $user->is_admin ?? false;
     }

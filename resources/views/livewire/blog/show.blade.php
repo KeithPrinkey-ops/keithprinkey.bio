@@ -20,7 +20,7 @@
 
         {{-- Hero Image --}}
         @if($post->hero_image_path)
-            <div class="w-64 h-64 rounded-xl overflow-hidden shadow-lg">
+            <div class="w-64 h-64 rounded-full overflow-hidden shadow-lg">
                 <img src="{{ asset($post->hero_image_path) }}" alt="{{ $post->title }}" class="w-full h-full object-cover" />
             </div>
         @endif
