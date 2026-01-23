@@ -8,8 +8,8 @@ We only collect information you provide through the contact form:
 - First and last name
 - Email address
 - Company name
-- Subject line
-- Message
+- Budget Range
+- Decision Timeline
 
 No other personal information is collected.
 

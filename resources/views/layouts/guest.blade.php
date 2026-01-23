@@ -25,6 +25,7 @@
 </head>
 
 <body class="flex flex-col bg-black min-h-screen antialiased">
+<x-cookies />
 <x-services.services />
 <x-banner />
 <!-- Navbar -->

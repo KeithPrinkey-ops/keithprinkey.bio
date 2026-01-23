@@ -1,0 +1,121 @@
+{
+    "iarc_rating_id": "14+",
+    "start_url": "https://keithprinkey.bio",
+    "shortcuts": [
+        {
+            "name": "Contact Us",
+            "url": "/leads",
+            "description": "Contact Page",
+            "icons": [
+                {
+                    "src": "https://keithprinkey.bio/storage/appimages/favicon-16x16.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "My Skills",
+            "url": "/skills",
+            "description": "My skills section",
+            "icons": [
+                {
+                    "src": "https://keithprinkey.bio/storage/appimages/favicon-16x16.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Resume",
+            "url": "/resume",
+            "description": "This is my resume",
+            "icons": [
+                {
+                    "src": "https://keithprinkey.bio/storage/appimages/favicon-16x16.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Projects Portfolio",
+            "url": "/pages",
+            "description": "This is my projects portfolio",
+            "icons": [
+                {
+                    "src": "https://keithprinkey.bio/storage/appimages/favicon-16x16.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "About Me",
+            "url": "/about",
+            "description": "This is my about me page",
+            "icons": [
+                {
+                    "src": "https://keithprinkey.bio/storage/appimages/favicon-16x16.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Tech Stack",
+            "url": "/tech-stack",
+            "description": "This is my tech stack page",
+            "icons": [
+                {
+                    "src": "https://keithprinkey.bio/storage/appimages/favicon-16x16.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Blog",
+            "url": "/blog",
+            "description": "This is my blog page",
+            "icons": [
+                {
+                    "src": "https://keithprinkey.bio/storage/appimages/favicon-16x16.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ],
+    "categories": [
+        "porfoltio"
+    ],
+    "edge_side_panel": {
+        "preferred_width": 50
+    },
+    "icons":[
+    {
+        "src":"storage/appimages/android-chrome-192x192.png",
+        "sizes":"192x192",
+        "type":"image/png"
+    },
+    {
+       "src":"storage/appimages/android-chrome-512x512.png",
+       "sizes":"512x512",
+       "type":"image/png"
+    }
+    ],
+
+
+    "name": "Keith Prinkey's Portfolio",
+    "display": "fullscreen",
+    "theme_color": "#d13434",
+    "background_color": "#45ac2d",
+    "short_name": "portfolio",
+    "id": "11",
+    "description": "Keith Prinkey's personal portfolio website showcasing projects, skills, and resume.",
+    "dir": "auto",
+    "scope": "https://keithprinkey.bio",
+    "lang": "en",
+    "orientation": "natural"
+}
