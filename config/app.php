@@ -14,7 +14,9 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
-
+    'title' => env('APP_TITLE', 'Web Development Services | Laravel & Full-Stack Developer'),
+    'description' => env('APP_DESCRIPTION', 'Professional web development services specializing in Laravel and full-stack development.'),
+    'keywords' => env('APP_KEYWORDS', 'Web Development, Web Developer, Software Engineer, Programmer, Full Stack Developer, PHP, Laravel, JavaScript, Vue.js, React, Node.js, HTML, CSS, MySQL, PostgreSQL, MongoDB, API Development, RESTful APIs, GraphQL, Frontend Development, Backend Development, Web Applications, Mobile Applications, Responsive Design, E-commerce, CMS, SEO, Performance Optimization, Security, Cloud Computing, DevOps, Version Control, Git, Agile Methodologies, Problem Solving, Critical Thinking, Team Collaboration, Communication Skills, Project Management, Continuous Learning, Innovation, Creativity, Passion for Technology, Professionalism, Reliability, Client Satisfaction, Results-Driven, Quality Code, Clean Code, Scalable Solutions, Custom Web Development, Maintenance and Support, Consultation Services'),
     /*
     |--------------------------------------------------------------------------
     | Application Environment

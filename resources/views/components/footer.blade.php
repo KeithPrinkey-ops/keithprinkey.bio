@@ -1,4 +1,3 @@
-
     <section class="py-10 bg-black">
         <div class="px-10 mx-auto max-w-7xl">
             <div class="flex flex-col items-center md:flex-row md:justify-between">
@@ -15,15 +14,19 @@
                             </g>
                         </svg> </a> </div>
             </div>
-            <div class="flex flex-col justify-between text-center md:flex-row">
-                <p class="order-last text-sm leading-tight text-zinc-500 md:order-first"> Crafted with <a href="https://laravel.com">Laravel</a> and <a href="https://tailwindcss.com" class="">Tailwind</a>. Built with ❤️ 😍 by <a href="https://linkedin.com/in/keith-prinkey-it">Keith Prinkey.</a> </p>
-                <ul class="flex flex-row justify-center pb-3 -ml-4 -mr-4 text-sm">
-                    <li class=""> <a href="{{ route('leads.capture') }}" class="px-4 text-zinc-500 hover:text-white">Contact</a> </li>
-                    <li class=""> <a href="/about" class="px-4 text-zinc-500 hover:text-white">About me</a> </li>
-                    <li class=""> <a href="/tech-stack" class="px-4 text-zinc-500 hover:text-white">Tech Stack</a> </li>
-                    <li class=""> <a href="/terms" class="px-4 text-zinc-500 hover:text-white">Terms</a></li>
-                    <li class=""> <a href="/privacy" class="px-4 text-zinc-500 hover:text-white">Privacy</a> </li>
+            <div class="flex flex-col items-center gap-6 text-center">
+                <p class="text-sm leading-tight -tracking-tighter text-zinc-500 max-w-2xl"> Crafted with <a href="https://laravel.com">Laravel</a> and <a href="https://tailwindcss.com" class="">Tailwind</a>. Built with ❤️ 😍 by <a href="https://linkedin.com/in/keith-prinkey-it">Keith Prinkey.</a> </p>
+                <ul class="flex flex-wrap-reverse justify-center gap-x-4 gap-y-2 pb-3 text-sm max-w-3xl">
+                    <li> <a href="{{ route('leads.capture') }}" class="px-4 text-zinc-500 hover:text-white">Contact</a> </li>
+                    <li> <a href="/about" class="px-2 text-zinc-500 hover:text-white">About me</a> </li><li> <a href="/tech-stack" class="px-2 text-zinc-500 hover:text-white">Tech Stack</a> </li>
+                    <li> <a href="/terms" class="px-2 text-zinc-500 hover:text-white">Terms</a></li>
+                    <li> <a href="/privacy" class="px-2 text-zinc-500 hover:text-white">Privacy</a> </li>
+                    <li> <a href="/pages" class="px-2 text-zinc-500 hover:text-white">Projects</a> </li>
+                    <li> <a href="/skils" class="px-2 text-zinc-500 hover:text-white">Skills</a> </li>
+                    <li> <a href="/resume" class="px-2 text-zinc-500 hover:text-white">Resume</a> </li>
+                    <li> <a href="/blog" class="px-2 text-zinc-500 hover:text-white">Blog</a> </li>
                 </ul>
+
             </div>
         </div>
     </section>
