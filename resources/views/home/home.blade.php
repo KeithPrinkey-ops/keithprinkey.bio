@@ -127,42 +127,42 @@
             </div>
 
             <div class="flex text-white">
-                <img src="/storage/images/odin_project.png" alt="odin_project_logo" class="flex-shrink-0 rounded-2xl w-20 h-20 mr-8 text-yellow-300 stroke-current"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M19 11v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path><path d="M13 13l9 3l-4 2l-2 4l-3 -9"></path><line x1="3" y1="3" x2="3" y2="3.01"></line><line x1="7" y1="3" x2="7" y2="3.01"></line><line x1="11" y1="3" x2="11" y2="3.01"></line><line x1="15" y1="3" x2="15" y2="3.01"></line><line x1="3" y1="7" x2="3" y2="7.01"></line><line x1="3" y1="11" x2="3" y2="11.01"></line><line x1="3" y1="15" x2="3" y2="15.01"></line></svg>
+                <img src="/storage/images/odin_project.png" alt="odin_project_logo" class="flex-shrink-0 rounded-2xl w-20 h-20 mr-8 text-yellow-300 stroke-current"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M19 11v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path><path d="M13 13l9 3l-4 2l-2 4l-3 -9"></path><line x1="3" y1="3" x2="3" y2="3.01"></line><line x1="7" y1="3" x2="7" y2="3.01"></line><line x1="11" y1="3" x2="11" y2="3.01"></line><line x1="15" y1="3" x2="15" y2="3.01"></line><line x1="3" y1="7" x2="3" y2="7.01"></line><line x1="3" y1="11" x2="3" y2="11.01"></line><line x1="3" y1="15" x2="3" y2="15.01"></line>
                 <div class="relative space-y-2">
                     <h4 class="text-xl font-bold leading-relaxed">The Odin Project</h4>
                     <p class="text-lg text-gray-300">I began my development journey through self-directed study with The Odin Project, building strong foundational skills early on.</p></div>
             </div>
 
             <div class="flex text-white">
-                <img src="/storage/images/frontend-masters.png" alt="frontend_masters_logo" class="flex-shrink-0 rounded-2xl w-20 h-20 mr-8 text-yellow-300 stroke-current"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 13.5v-7.5a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6m-8 -10h16m-10 -6v11.5m-8 3.5h7m-3 -3l3 3l-3 3"></path></svg>
+                <img src="/storage/images/frontend-masters.png" alt="frontend_masters_logo" class="flex-shrink-0 rounded-2xl w-20 h-20 mr-8 text-yellow-300 stroke-current"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 13.5v-7.5a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6m-8 -10h16m-10 -6v11.5m-8 3.5h7m-3 -3l3 3l-3 3"></path>
                 <div class="relative space-y-2">
                     <h4 class="text-xl font-bold leading-relaxed">Frontend Masters</h4>
                     <p class="text-lg text-gray-300">I took free courses here for HTML5 & CSS3 via the <a href="https://frontendmasters.com/welcome/github-student-developers/" class="font-sans border border-2 border-amber-500">GitHub Student Developer Pack</a></p></div>
             </div>
 
             <div class="flex text-white">
-                <img src="/storage/images/huggingface-color.svg" alt="hugging_face_logo" class="flex-shrink-0 rounded-2xl w-20 h-20 mr-8 text-yellow-300 stroke-current"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 13.5v-7.5a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6m-8 -10h16m-10 -6v11.5m-8 3.5h7m-3 -3l3 3l-3 3"></path></svg>
+                <img src="/storage/images/huggingface-color.svg" alt="hugging_face_logo" class="flex-shrink-0 rounded-2xl w-20 h-20 mr-8 text-yellow-300 stroke-current"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 13.5v-7.5a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6m-8 -10h16m-10 -6v11.5m-8 3.5h7m-3 -3l3 3l-3 3"></path>
                 <div class="relative space-y-2">
                     <h4 class="text-xl font-bold leading-relaxed">Hugging Face</h4>
                     <p class="text-lg text-gray-300">I have used Hugging Face for open source LLM access.</p></div>
             </div>
 
             <div class="flex text-white">
-                <img src="/storage/images/uopx-phoenixbird-red.png" alt="uopx_logo" class="flex-shrink-0 rounded-2xl w-20 h-20 mr-8 text-yellow-300 stroke-current"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 13.5v-7.5a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6m-8 -10h16m-10 -6v11.5m-8 3.5h7m-3 -3l3 3l-3 3"></path></svg>
+                <img src="/storage/images/uopx-phoenixbird-red.png" alt="uopx_logo" class="flex-shrink-0 rounded-2xl w-20 h-20 mr-8 text-yellow-300 stroke-current"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 13.5v-7.5a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6m-8 -10h16m-10 -6v11.5m-8 3.5h7m-3 -3l3 3l-3 3"></path>
                 <div class="relative space-y-2">
                     <h4 class="text-xl font-bold leading-relaxed">President's List</h4>
                     <p class="text-lg text-gray-300">I have been listed on the President's list at the University of Phoenix.</p></div>
             </div>
 
             <div class="flex text-white">
-                <img src="/storage/images/uopx-phoenixbird-red.png" alt="uopx_logo" class="flex-shrink-0 rounded-2xl w-20 h-20 mr-8 text-yellow-300 stroke-current"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 13.5v-7.5a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6m-8 -10h16m-10 -6v11.5m-8 3.5h7m-3 -3l3 3l-3 3"></path></svg>
+                <img src="/storage/images/uopx-phoenixbird-red.png" alt="uopx_logo" class="flex-shrink-0 rounded-2xl w-20 h-20 mr-8 text-yellow-300 stroke-current"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 13.5v-7.5a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6m-8 -10h16m-10 -6v11.5m-8 3.5h7m-3 -3l3 3l-3 3"></path>
                 <div class="relative space-y-2">
                     <h4 class="text-xl font-bold leading-relaxed">Dean's List</h4>
                     <p class="text-lg text-gray-300">I have been listed on the Dean's list at the University of Phoenix.</p></div>
             </div>
 
             <div class="flex text-white">
-                <img src="/storage/images/devdojo.jpeg" alt="devdojo_logo" class="flex-shrink-0 rounded-2xl w-20 h-20 mr-8 text-yellow-300 stroke-current"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 13.5v-7.5a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6m-8 -10h16m-10 -6v11.5m-8 3.5h7m-3 -3l3 3l-3 3"></path></svg>
+                <img src="/storage/images/devdojo.jpeg" alt="devdojo_logo" class="flex-shrink-0 rounded-2xl w-20 h-20 mr-8 text-yellow-300 stroke-current"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 13.5v-7.5a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6m-8 -10h16m-10 -6v11.5m-8 3.5h7m-3 -3l3 3l-3 3"></path>
                 <div class="relative space-y-2">
                     <h4 class="text-xl font-bold leading-relaxed">DevDojo</h4>
                     <p class="text-lg text-gray-300">I use DevDojo for reusable components made almost exclusively in TailwindCSS.</p></div>
