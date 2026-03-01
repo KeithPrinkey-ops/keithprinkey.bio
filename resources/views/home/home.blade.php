@@ -117,7 +117,7 @@
             </div>
 
             <div class="flex text-white">
-                <img src="/storage/images/ovhcloud.png" alt="ovhcloud_logo" class="flex-shrink-0 rounded-2xl w-20 h-20 mr-8" alt="OVHcloud logo">
+                <img src="/storage/images/ovhcloud.png" alt="ovhcloud_logo" class="flex-shrink-0 rounded-2xl w-20 h-20 mr-8">
                 <div class="relative space-y-2">
                     <h4 class="text-xl font-bold leading-relaxed">OVHcloud</h4>
                     <p class="text-lg text-gray-300">
