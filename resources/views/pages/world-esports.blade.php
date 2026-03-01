@@ -8,9 +8,10 @@
         $og = asset('storage/images/world-esports/wes_homepage_1.png');
     @endphp
 
+    @section('title', $title)
+    @section('description', $desc)
+
     @push('meta')
-        <link rel="canonical" href="{{ $canonical }}">
-        <meta name="description" content="{{ $desc }}">
         <meta property="og:type" content="website">
         <meta property="og:title" content="{{ $title }}">
         <meta property="og:description" content="{{ $desc }}">
@@ -19,7 +20,7 @@
         <meta name="twitter:card" content="summary_large_image">
         <script type="application/ld+json">
             {
-              "@context":"https://schema.org",
+              "context":"https://schema.org",
               "@type":"SoftwareApplication",
               "name":"World eSports",
               "applicationCategory":"GameApplication",
@@ -30,7 +31,7 @@
         }
 
         </script>
-    @endpush>
+    @endpush
 
     {{-- Hero --}}
     <section class="dark:bg-black bg-slate-200 dark:text-white">

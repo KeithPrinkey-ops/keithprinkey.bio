@@ -1,14 +1,12 @@
 
 <x-guest-layout>
     @php
-        $title = 'My Work & Portfolio';
-        $desc = 'A collection of projects showcasing my work in web development, including Laravel, Livewire, and more.';
+        $title = 'Portfolio – Laravel & Tailwind Projects | Keith Prinkey';
+        $desc = 'Explore recent SaaS, e-commerce and API builds crafted with Laravel 10, Tailwind CSS and Livewire. See timelines, tech choices and outcomes for each project.';
     @endphp
 
-    @push('meta')
-        <title>{{ $title }}</title>
-        <meta name="description" content="{{ $desc }}">
-    @endpush
+    @section('title', $title)
+    @section('description', $desc)
 
     <section class="bg-slate-100 dark:bg-slate-900">
         <div class="relative">

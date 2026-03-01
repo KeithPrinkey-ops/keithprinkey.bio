@@ -18,6 +18,7 @@ class Leads extends Model
         'project_type',
         'budget_range',
         'decision_timeline',
+        'agree_to_terms',
     ];
 
 

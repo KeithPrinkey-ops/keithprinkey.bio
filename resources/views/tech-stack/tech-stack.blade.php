@@ -1,5 +1,6 @@
 
 <x-guest-layout>
+    @section('title', 'Tech Stack – Laravel, Tailwind CSS, Livewire | Keith Prinkey')
     <div class="py-10 bg-slate-100 dark:bg-gray-800 sm:py-12 lg:py-16 tails-selected-element">
         <div class="px-12 pb-5 mx-auto max-w-screen-2xl md:px-16">
             <div class="mb-10 md:mb-16">

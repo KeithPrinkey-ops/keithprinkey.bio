@@ -6,10 +6,10 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>
-        {{ $title
-            ?? trim($__env->yieldContent('title'))
-            ?: config('app.title')
-        }}
+    {!! $title
+        ?? trim($__env->yieldContent('title'))
+        ?: config('app.title')
+        !!}
     </title>
     <meta name="description"
           content="{{ $description
@@ -52,12 +52,15 @@
 
     <!-- Livewire -->
     @livewireStyles
+
 </head>
 
 <body class="flex flex-col bg-black min-h-screen antialiased">
 <x-cookies />
 <x-services.services />
-<x-banner />
+<x-leads-banner />
+
+
 <!-- Navbar -->
 <x-navbar />
 <!-- Main Content -->

@@ -16,7 +16,7 @@ class LeadCaptureForm extends Component
     {
         $this->form->store();
         session()->flash('banner', 'Lead captured successfully!');
-        return redirect()->route('thank-you');
+        session()->flash('flash.bannerStyle', 'success');
     }
 
 

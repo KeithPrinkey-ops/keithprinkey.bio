@@ -1,11 +1,13 @@
-<section class="relative w-full py-10 bg-black bg-opacity-95 sm:py-16">
+@section('title', 'Blog')
+
+<section class="relative w-full py-10 bg-white dark:bg-slate-800 bg-opacity-95 sm:py-16">
                 <div class="absolute inset-0 w-full h-full bg-blue-900 opacity-10"></div>
                 <div class="max-w-6xl px-10 mx-auto">
                     {{-- Header --}}
                     <div class="flex justify-between w-full pb-5">
                         <div class="flex flex-col items-start sm:flex-row sm:items-center">
                             <div class="px-3 py-2 text-sm font-medium text-white uppercase bg-zinc-800">Auto Sorted By Views</div>
-                            <h1 class="ml-3 text-3xl font-bold text-white sm:ml-5">Trending Blog Posts</h1>
+                            <h1 class="ml-3 text-3xl font-bold text-slate-700 dark:text-white sm:ml-5">Trending Blog Posts</h1>
                         </div>
 
                     </div>

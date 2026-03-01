@@ -1,5 +1,5 @@
-
 <x-guest-layout>
+<div>
     {{-- Page meta --}}
     @php
         $title = 'Laravel Lead Generation & Contact Form';
@@ -8,18 +8,20 @@
         $og = asset('storage/images/al-anon/al-anon-custom-meeting-finder.png');
     @endphp
 
+    @section('title', $title)
+    @section('description', $desc)
+
     @push('meta')
-        <link rel="canonical" href="{{ $canonical }}">
-        <meta name="description" content="{{ $desc }}">
         <meta property="og:type" content="website">
         <meta property="og:title" content="{{ $title }}">
         <meta property="og:description" content="{{ $desc }}">
         <meta property="og:url" content="{{ $canonical }}">
         <meta property="og:image" content="{{ $og }}">
         <meta name="twitter:card" content="summary_large_image">
+
         <script type="application/ld+json">
             {
-              "@context":"https://schema.org",
+              "context":"https://schema.org",
               "@type":"SoftwareApplication",
               "name":"A-Mills HVAC",
               "applicationCategory":"LeadGeneration",
@@ -30,7 +32,7 @@
         }
 
         </script>
-    @endpush>
+    @endpush
 
     {{-- Hero --}}
     <section class="dark:bg-black bg-slate-200 dark:text-white">
@@ -74,7 +76,7 @@
     {{-- Features --}}
     <section class="mx-auto max-w-7xl px-6 py-12">
         <h2 class="text-2xl font-bold text-gray-400 dark:text-white">Key Features</h2>
-        <div class="mt-6 grid md:grid-cols=2 lg:grid-cols-3 gap-6">
+        <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach ([
                 ['Livewire Consultation Form','Built a real-time consultation form using Laravel Livewire, including input validation, submission handling, and dynamic confirmation messaging.'],
                 ['TailwindCSS Design System','Implemented a modern responsive UI using TailwindCSS with reusable Blade component patterns for a consistent design across all pages.'],
@@ -150,9 +152,10 @@
             <h2 class="text-2xl font-bold">Want this kind of development work?</h2>
             <p class="mt-2 text-white/90">I can tailor this meeting finder to your rules, branding, and workflow.</p>
             <div class="mt-6 flex flex-wrap gap-3">
-                <a href="{{ route('leads.capture') }}" class="rounded-2xl bg-white/10 hover:bg-white/20 px-5 py-3">Request a quote</a>
+                <a href="{{ url('/leads') }}" class="rounded-2xl bg-white/10 hover:bg-white/20 px-5 py-3">Request a quote</a>
                 <a href="https://a-millshvac.com" target="_blank" class="rounded-2xl bg-white text-slate-900 px-5 py-3">Visit A-Mills HVAC</a>
             </div>
         </div>
     </section>
+</div>
 </x-guest-layout>

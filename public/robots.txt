@@ -1,4 +1,9 @@
 User-agent: *
+Disallow: /admin
 Disallow: /dashboard
 Disallow: /notifications
-Sitemap: {{ config('app.url') }}/sitemap.xml
+Disallow: /api
+Disallow: /login
+Disallow: /register
+Disallow: /password
+Sitemap: https://keithprinkey.bio/sitemap.xml
